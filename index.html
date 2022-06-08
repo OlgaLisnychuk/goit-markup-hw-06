@@ -458,35 +458,38 @@
       <div class="modal">
         <form class="form">
           <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
-          <div class="form-field">
-            <label for="name">Имя</label>
-            <input type="text" name="user-name" id="name" />
-          </div>
-          <div class="form-field">
-            <label for="tel">Телефон</label>
-            <input type="tel" name="tel" id="tel" />
-          </div>
-          <div class="form-field" >
-            <label for="mail">Почта</label>
-            <input type="mail" name="mail" id="mail" />
-          </div>
-          <div class="form-field" >
-            <label for="comment">Комментарий</label>
-            <textarea
-            
+       
+            <label class="form-field" >
+              Имя
+              <input class="form-imput" type="text" name="user-name"  />
+            </label>
+      
+            <label class="form-field" >
+              Телефон
+              <input class="form-imput" type="tel" name="tel"  />
+            </label>
+        
+            <label class="form-field" >
+              Почта
+              <input class="form-imput" type="mail" name="mail"  />
+            </label>
+        
+            <label class="form-field">
+              Комментарий
+              <textarea class="comment"
               name="comment"
-              id="comment"
               cols="30"
               rows="10"
               placeholder="Введите текст"
             ></textarea>
-          </div>
-          <div class="policy-checkbox">
-            <input type="checkbox" name="policy" id="policy" />
-            <label for="policy">Соглашаюсь с рассылкой и принимаю</label>
-            <a href="">Условия договора</a>
+            </label>
+            
+            <label class="policy-checkbox">
+              <input class="checkbox" type="checkbox" name="policy"  />
+              Соглашаюсь с рассылкой и принимаю</label>
+            <a class="checkbox-link" href="">Условия договора</a>
             <button class="submit" type="submit">Отправить</button>
-          </div>
+        
         </form>
 
         <p></p>

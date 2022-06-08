@@ -224,6 +224,51 @@ left: 0;
     overflow: hidden;
 }
 
+/* Button  */
+
+.button {
+    display: inline-block;
+    padding-top: 10px;
+    padding-right: 32px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.button.primary {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    transition-property: background-color box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+.button.secondary {
+    color: var(--accent-color);
+    background-color: var(--primary-white-color);
+
+
+}
+.button.primary:hover,
+.button.primary:focus {
+background: var(--btn-bg-hover-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+}
+
+
+
  /* Hero */
 
 .hero {
@@ -544,8 +589,15 @@ margin-bottom: 9px;
 
 .footer-flex {
     display: flex;
+    
+    
 
 }
+
+.do-flex {
+    margin-right: 93px;
+}
+
 
 .do-list {
     display: flex;
@@ -592,51 +644,53 @@ margin-bottom: 20px;
 }
 
 
-
-/* Button  */
-
-.button {
-    display: inline-block;
-    padding-top: 10px;
-    padding-right: 32px;
-    padding-bottom: 10px;
-    padding-left: 32px;
-    border: none;
-    border-radius: 4px; 
-    color: var(--title-text-color);
-    background-color: var(--primary-white-color);
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    cursor: pointer;
-    border-radius: 4px;
+.sign-up {
+ 
+    margin-right: 93px;
 }
 
-.button.primary {
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
-    transition-property: background-color box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
+.sign-up-form {
+    display: flex;
+    margin-top: 20px;
 }
 
-.button.secondary {
-    color: var(--accent-color);
-    background-color: var(--primary-white-color);
+.sign-up-input {
+width: 358px;
+height: 50px;
+background: #2F303A;
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+padding-top: 15px;
+padding-left: 16px;
+padding-bottom: 15px;
 
+font-weight: 400;
+font-size: 16px;
+line-height: 1.25;
+align-items: center;
+letter-spacing: 0.03em;
+
+color: rgba(255, 255, 255, 0.6);
+margin-right: 12px;
 
 }
-.button.primary:hover,
-.button.primary:focus {
-background: var(--btn-bg-hover-color);
+
+.sign-up-btn {
+display: flex;
+align-items: center;
+text-align: center;
+width: 200px;
+height: 50px;
+color: var(--primary-white-color);
+background-color: var(--accent-color);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
+
+
+
 }
+
 
 
  /* Backdrop */

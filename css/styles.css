@@ -248,7 +248,7 @@ left: 0;
 .button.primary {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
-    transition-property: background-color box-shadow;
+    transition-property: background-color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
@@ -478,7 +478,7 @@ margin-right: 10px;
 .social-list {
 display: flex;
 justify-content: center;
-padding-top: 16px;
+margin-top: 16px;
 
 
 
@@ -537,15 +537,18 @@ padding-top: 60px;
 padding-bottom: 60px;
 }
 
+.footer-adress {
+    min-width: 231px;
+}
+
 .address-top {
-    margin-top: 20px;
+margin-top: 20px;
 }
 .address {
 font-style: normal;   
 }
 
 .address .item:not(:last-child) {
-
 margin-bottom: 9px;
 }
 
@@ -599,7 +602,6 @@ width: 206px;
 
 
 .do-title {
-    
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
@@ -623,7 +625,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
-
 .do-item:not(:last-child) {
     margin-right: 10px;
 }
@@ -637,7 +638,7 @@ fill: var(--primary-white-color);
 
 
 .sign-up {
-margin-right: 93px;
+margin-right: auto;
 }
 
 .sign-up-form {
@@ -746,7 +747,6 @@ resize: none;
 }
 
 .form {
-    outline: 2px solis green;
 width: 448px;
 margin-left: auto;
 margin-left: auto;
@@ -768,7 +768,11 @@ margin-bottom: 12px;
 display: flex;
 flex-direction: column;
 position: relative;
-
+font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.01em;
+    
 
 }
 
@@ -793,7 +797,6 @@ font-weight: 400;
 font-size: 12px;
 line-height: 1.17;
 letter-spacing: 0.01em;
-
 color: var(--primary-text-color);
 
 }
@@ -817,8 +820,8 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-be
 fill: var(--accent-color);
 }
 
-.form-ico:hover,
-.form-ico:focus {
+.form-icon:hover,
+.form-icon:focus {
  fill: currentColor;
 }
 
@@ -830,20 +833,29 @@ outline: none;
 border-color: var(--accent-color);
 }
 
+
+
 .comment {
 padding: 12px 16px;
 height: 120px; 
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
-font-weight: 400;
-font-size: 12px;
-line-height: 1.17;
-letter-spacing: 0.01em;
 cursor: pointer;
-color: rgba(117, 117, 117, 0.5);
+
 transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+
+.comment::placeholder {
+
+font-weight: 400;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.01em;
+color: rgba(117, 117, 117, 0.5);
+    }
+    
+
 
 .comment:hover,
 .comment:focus-within,
@@ -927,7 +939,6 @@ margin-right: 3px;
 
 .submit {
 min-width: 200px;
-min-height: 50px;
 padding: 10px 55px 10px 56px;
 font-family: inherit;
 font-style: normal;

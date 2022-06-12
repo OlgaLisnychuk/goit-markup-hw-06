@@ -579,19 +579,14 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--accent-color);
 }
 
-
-
-.footer-adress {
-margin-right: 70px;
-}
-
 .footer-flex {
 display: flex;
+align-items: baseline;
 
 }
 
 .do-flex {
-margin-right: 93px;
+margin-left: 70px;
 }
 
 
@@ -638,7 +633,7 @@ fill: var(--primary-white-color);
 
 
 .sign-up {
-margin-right: auto;
+margin-left: auto;
 }
 
 .sign-up-form {
